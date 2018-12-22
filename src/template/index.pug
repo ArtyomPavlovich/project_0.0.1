@@ -1,0 +1,110 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    |
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |
+    link(rel='stylesheet', type='text/css', href='./style/HeaderAndButton.css')
+    |
+    link(rel='stylesheet', type='text/css', href='./style/ForFooter.css')
+    |
+    link(rel='stylesheet', type='text/css', href='./style/Content-w.css')
+    |
+    link(rel='stylesheet', type='text/css', href='./style/AutoSlidershow.css')
+    |
+    link(rel='stylesheet', type='text/css', href='./style/SliderForDevelop.css')
+    |
+    title Vino W
+body
+    button#myBtn(onclick='topFunction()', title='Go to top') Top
+    |
+    #header.header
+        a(href='index.html') О нас
+        |
+        a(href='menu.html') Карта вин
+        |
+        a(href='index.html')
+            img(src='./img/img01.jpg', alt='')
+        |
+        a(href='developments.html') События
+        |
+        a(href='contacts.html') Контакты
+    |
+    .banner
+        img(src='./ing/web_1.jpg', alt='', width='1920', height='912')
+    |
+    .content-w
+        .item_1
+            img(src='./ing/com_1.png', alt='', style='width: 96%')
+        |
+        .item_2
+            img(src='./ing/com_2.png', alt='', style='width: 100%')
+    |
+    .content-w_1
+        .item_3
+            img(src='./ing/com_3.png', alt='', style='width: 100%')
+    |
+    .content-w_3
+        .item_4
+h1 На карте
+|
+#map.map
+
+|
+.item_4
+    h1 Винное трио
+    |
+    p
+        | Звонишь, сообщаешь о том, что хочешь заказать винное трио,
+        | и мы доставляем тебе 3 бутылки
+        | на выбор винодела
+    |
+    .slideshow-container
+        .mySlides.fade
+            img(src='./ing/com_4.png', alt='', style='width:100%')
+        |
+        .mySlides.fade
+            img(src='./ing/com_5.png', alt='', style='width:100%')
+        |
+        div(style='text-align:center')
+            span.dot
+            |
+            span.dot
+        |
+        button.button
+            a.lol(href='menu.html') В нашей краме широкая винная карта
+|
+.footer
+    img(src='./ing/img_2.png', alt='')
+    |
+    p.text
+        | Винная крама Вино Ви
+        br
+        |            Адрес
+        br
+        |            Гродн ул. малая троицкая, д 12
+        br
+    |
+    p.text
+        | телефон
+        br
+        |            8 029 8444 552
+        br
+|
+.link
+    a(href='')
+        img(src='./ing/insta.png', alt='')
+    |
+    a(href='')
+        img(src='./ing/face.png', alt='')
+    |
+    a(href='')
+        img(src='./ing/tvit.png', alt='')
+    |
+    a(href='')
+        img(src='./ing/veber.png', alt='')
+|
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBYzXj5wF4L6mChyyc5xwfb2QT1QEZ9VN8&callback=initMap', async='', defer='')
+script( src='./js/GoogleMap.js')
+script(type='text/javascript', src='./js/AutoSlidershow.js')
+script(type='text/javascript', src='./js/ForHeader.js')

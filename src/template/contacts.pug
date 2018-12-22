@@ -1,0 +1,96 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel='stylesheet', type='text/css', href='./style/HeaderAndButton.css')
+        link(rel='stylesheet', type='text/css', href='./style/ContainerForContacrs.css')
+        link(rel='stylesheet', type='text/css', href='./style/ForCheckIn.css')
+        link(rel='stylesheet', type='text/css', href='./style/ForFooter.css')
+        title Vino W
+    body
+        button#myBtn(onclick='topFunction()', title='Go to top') Top
+        .header
+            a(href='index.html') О нас
+            a(href='menu.html') Карта вин
+            a(href='index.html')
+                img(src='img/img01.jpg', alt='')
+            a(href='developments.html') События
+            a(href='contacts.html') Контакты
+        .chapter
+            h1 Контакты
+        .grid-container
+            .content-contact
+                h2(style='color: #f2f2f2') Адрес
+                p г. Гродно ул. Малая Троицкая, д. 12
+                h2(style='color: #f2f2f2') Телефон
+                p 8 029 8444 552
+                h2(style='color: #f2f2f2') Часы работы
+                p
+                    | С понедельника по четверг, воскресенье с 11. 00 до 23. 00
+                    br
+                    |             Пятница, суббота с 11. 00 до 2. 00
+            form#regForm(action='')
+                h1 Регистрация
+                // One "tab" for each step in the form:
+                .tab
+                    | Ваше имя
+                    p
+                        input(placeholder='Имя...', oninput="this.className = ''")
+                    p
+                        input(placeholder='Фамилия...', oninput="this.className = ''")
+                .tab
+                    | Контактная информация
+                    p
+                        input(placeholder='E-mail...', oninput="this.className = ''")
+                    p
+                        input(placeholder='Номер тел...', oninput="this.className = ''")
+                .tab
+                    | Дата рождения
+                    p
+                        input(placeholder='День', oninput="this.className = ''")
+                    p
+                        input(placeholder='Месяц', oninput="this.className = ''")
+                    p
+                        input(placeholder='Год', oninput="this.className = ''")
+                .tab
+                    | Логин
+                    p
+                        input(placeholder='Имя пользователя...', oninput="this.className = ''")
+                    p
+                        input(placeholder='Пароль...', oninput="this.className = ''")
+                div(style='overflow:auto;')
+                    div(style='float:right;')
+                        button#prevBtn.button(type='button', onclick='nextPrev(-1)') Вернуться
+                        button#nextBtn.button(type='button', onclick='nextPrev(1)') Далее
+                // Circles which indicates the steps of the form:
+                div(style='text-align:center;margin-top:40px;')
+                    span.step
+                    span.step
+                    span.step
+                    span.step
+        .footer
+            img(src='./img/img_2.png', alt='')
+            p.text
+                | Винная крама Вино Ви
+                br
+                |         Адрес
+                br
+                |         Гродно ул. малая троицкая, д. 12
+                br
+            p.text
+                | Телефон
+                br
+                |         8 029 8444 552
+                br
+        .link
+            a(href='')
+                img(src='./img/insta.png', alt='')
+            a(href='')
+                img(src='./img/face.png', alt='')
+            a(href='')
+                img(src='./img/tvit.png', alt='')
+            a(href='')
+                img(src='./img/veber.png', alt='')
+        script(src='./js/ScriptForReg.js')
+        script(type='text/javascript', src='./js/ForHeader.js')
